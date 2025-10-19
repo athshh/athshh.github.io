@@ -1,0 +1,17 @@
+.contentMain {
+  padding: 25%;
+  font-family: arial;
+  font-size: 52px;
+  color: white;
+  text-align: center;
+}
+
+.name {
+  font-weight: 900;
+  font-size: 72px;
+}
+
+h6 {
+  font-size: 24px;
+  font-weight: 400px;
+}
