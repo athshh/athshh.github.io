@@ -1,0 +1,52 @@
+.mainContent {
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.mainContent > h1 {
+  font-size: 48px;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+}
+
+h2 {
+  border: 3px solid green;
+  height: auto;
+  padding: 40px;
+  margin-top: 50%;
+}
+
+.childContent {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 12rem;
+}
+
+.aboutText {
+  font-size: 4vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .childContent {
+    grid-template-columns: auto;
+  }
+  .aboutText {
+    margin-top: 6%;
+  }
+}
+
+/*
+ @media screen and (max-width: 1024px) {
+  .cardContainer {
+    grid-template-columns: auto;
+  }
+}
+*/
