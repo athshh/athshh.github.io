@@ -1,3 +1,8 @@
+:root {
+  --primary-color: rgba(25, 29, 45); /* try #212121 also for dark mode */
+  --background-color: rgba(25, 29, 45);
+  --font: sans-serif;
+}
 .mainContent {
   color: white;
   position: absolute;
@@ -5,48 +10,71 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  font-size: 24px;
 }
 
 .mainContent > h1 {
-  font-size: 48px;
+  font-size: 52px;
 }
 
-.cardContainer {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 2rem;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-h2 {
-  border: 3px solid green;
+.timelineOuter {
+  font-family: var(--font);
+  display: flex;
+  justify-content: center;
+}
+
+/* Timeline Container */
+.timeline {
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+  border-left: 2px solid white;
   height: auto;
-  padding: 40px;
-  margin-top: 50%;
+  padding-left: 20px;
 }
 
-.childContent {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 12rem;
+/* Card container */
+.card {
+  position: relative;
+  margin: 0 0 20px;
+  padding: 10px;
+  height: auto;
+  background: #351616;
+  color: gray;
+  border-radius: 8px;
+  max-width: 400px;
 }
 
-.aboutText {
-  font-size: 4vw;
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-@media screen and (max-width: 1024px) {
-  .childContent {
-    grid-template-columns: auto;
-  }
-  .aboutText {
-    margin-top: 6%;
-  }
+/* Title of the card */
+.title {
+  color: #cecece;
+  text-align: left;
+  position: relative;
 }
 
-/*
- @media screen and (max-width: 1024px) {
-  .cardContainer {
-    grid-template-columns: auto;
-  }
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  left: -39px;
+  border: 3px solid white;
 }
-*/

@@ -1,7 +1,7 @@
 import Navbar from './Navbar.jsx'
 import Landing from './Landing.jsx'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import Stars from './assets/pexels-umkreisel-app-956999.jpg'
+import Stars from './assets/stars.png'
 import Skyline from './assets/skyline.png'
 import styles from './App.module.css'
 import About from './About.jsx'
@@ -16,6 +16,7 @@ function App() {
 				<ParallaxLayer offset={0.5} factor={2} speed={1.5} style={{backgroundImage: `url(${Skyline})`}}>
 					<About />
 				</ParallaxLayer>
+
 			</Parallax >
 		</>
 	)
