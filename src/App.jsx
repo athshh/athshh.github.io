@@ -10,10 +10,10 @@ function App() {
 	return (
 		<>
 			<Parallax pages={5}>
-				<ParallaxLayer offset={0} factor={1.5} speed={2.0} style={{backgroundColor: `black`, backgroundImage: `url(${Stars})`}}>
+				<ParallaxLayer offset={0} factor={1.0} speed={1.0} style={{backgroundColor: `black`, backgroundImage: `url(${Stars})`}}>
 					<Landing />
 				</ParallaxLayer>
-				<ParallaxLayer offset={0.5} factor={2} speed={1.5} style={{backgroundImage: `url(${Skyline})`}}>
+				<ParallaxLayer offset={1} factor={2} speed={1.0} style={{backgroundImage: `url(${Skyline})`}}>
 					<About />
 				</ParallaxLayer>
 
