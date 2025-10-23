@@ -1,20 +1,22 @@
 :root {
   --primary-color: rgba(25, 29, 45); /* try #212121 also for dark mode */
   --background-color: rgba(25, 29, 45);
-  --font: sans-serif;
+  --font: arial;
 }
 .mainContent {
   color: white;
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  font-family: arial;
+  transform: translate(-50%, 0%);
   text-align: center;
   font-size: 24px;
 }
 
 .mainContent > h1 {
   font-size: 52px;
+  font-family: arial;
 }
 
 * {
