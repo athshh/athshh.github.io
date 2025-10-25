@@ -1,4 +1,46 @@
 html {
-  background-color: black;
   font-family: arial;
+}
+
+.landingFG {
+  position: relative;
+  z-index: 100;
+}
+
+.landingBG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+
+@keyframes movingCircle {
+  0% {
+    transform: translate(300%, 300%);
+  }
+  25% {
+    transform: translate(600%, 200%);
+  }
+  50% {
+    transform: translate(400%, 600%);
+  }
+  75% {
+    transform: translate(900%, 500%);
+  }
+  100% {
+    transform: translate(300%, 300%);
+  }
+}
+
+.circle {
+  aspect-ratio: 1;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  height: 0;
+  width: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 100%;
+  box-shadow: 0 0 128px 100px rgba(0, 0, 0, 0.7);
 }
