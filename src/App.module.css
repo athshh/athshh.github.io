@@ -2,8 +2,17 @@ html {
   font-family: arial;
 }
 
-.landingFG {
+#wrapper {
   position: relative;
+}
+body {
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.2) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 1px, transparent 1px);
+}
+
+.landingFG {
   z-index: 100;
 }
 
@@ -14,33 +23,15 @@ html {
   z-index: -100;
 }
 
-@keyframes movingCircle {
-  0% {
-    transform: translate(300%, 300%);
-  }
-  25% {
-    transform: translate(600%, 200%);
-  }
-  50% {
-    transform: translate(400%, 600%);
-  }
-  75% {
-    transform: translate(900%, 500%);
-  }
-  100% {
-    transform: translate(300%, 300%);
-  }
-}
-
 .circle {
-  aspect-ratio: 1;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
   height: 0;
   width: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  border: none;
-  border-radius: 100%;
-  box-shadow: 0 0 128px 100px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 128px 100px rgba(0, 0, 0, 0.5);
+}
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
 }

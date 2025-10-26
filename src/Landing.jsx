@@ -5,9 +5,8 @@ function Landing() {
 		<>
 			<div className={styles.landing}>
 				<div className={styles.contentMain}>
-					Hello!<br />
-					<span className={styles.name}>I'm Athiban Sharon!</span><br />
-					<h6>scroll to continue!</h6>
+					<span className={styles.name}>I'm Athiban Sharon.</span><br />
+					<h6>Programmer, Designer, Tinkerer.</h6>
 				</div>
 			</div>
 		</>

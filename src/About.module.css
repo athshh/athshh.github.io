@@ -1,12 +1,11 @@
 :root {
-  --primary-color: rgba(25, 29, 45); /* try #212121 also for dark mode */
-  --background-color: rgba(25, 29, 45);
+  --primary-color: rgba(0, 0, 0, 0); /* try #212121 also for dark mode */
+  --background-color: rgba(0, 0, 0, 0);
   --font: arial;
 }
 .mainContent {
-  color: white;
   position: absolute;
-  top: 35%;
+  top: 20%;
   left: 50%;
   font-family: arial;
   transform: translate(-50%, 0%);
@@ -49,8 +48,8 @@
   margin: 0 0 20px;
   padding: 10px;
   height: auto;
-  background: #351616;
-  color: gray;
+  background: rgba(0, 0, 0, 0.7);
+  color: rgba(200, 200, 200, 1);
   border-radius: 8px;
   max-width: 400px;
 }
@@ -94,7 +93,7 @@
     gap: 1rem;
   }
   .mainContent {
-    top: 30%;
+    top: 20%;
   }
   .card {
     font-size: 20px;

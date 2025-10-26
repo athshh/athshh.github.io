@@ -2,7 +2,7 @@ import Navbar from './Navbar.jsx'
 import Landing from './Landing.jsx'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import Stars from './assets/stars.png'
-import Skyline from './assets/skyline.png'
+import FirstGradient from './assets/firstgrad.png'
 import styles from './App.module.css'
 import About from './About.jsx'
 
@@ -22,27 +22,17 @@ function App() {
 	return (
 		<>
 			<Parallax pages={5}>
-				<ParallaxLayer offset={0} factor={1.5} speed={2.0}>
-					<div className={styles.landingBG} id="move">
-						<style></style>
-						<div className={styles.circle} style={{
-							aspectRatio: '1',
-							left: '50%',
-							right: '50%',
-							transform: 'translate(-50%, -50%)',
-							height: '0',
-							width: '0',
-							backgroundColor: 'rgba(0, 0, 0, 0.7)',
-							border: 'none',
-							borderRadius: '100%',
-							boxShadow: '0 0 128px 100px rgba(0, 0, 0, 0.7)'
-						}}></div>
-					</div>
-					<div className={styles.landingFG}>
-						<Landing />
+				<ParallaxLayer offset={0} factor={1.5} speed={2.0} style={{ position: "relative" }}>
+					<div id="wrapper">
+						<div className={styles.landingBG} id="move">
+							<div className={styles.circle} ></div>
+						</div>
+						<div className={styles.landingFG}>
+							<Landing />
+						</div>
 					</div>
 				</ParallaxLayer>
-				<ParallaxLayer offset={0.5} factor={2} speed={1.5} style={{ backgroundImage: `url(${Skyline})` }}>
+				<ParallaxLayer offset={0.5} factor={3} speed={1.5} style={{ backgroundImage: `url(${FirstGradient})` }}>
 					<About />
 				</ParallaxLayer>
 
