@@ -45,7 +45,7 @@
 /* Card container */
 .card {
   position: relative;
-  margin: 0 0 20px;
+  margin: 0 0 10px;
   padding: 10px;
   height: auto;
   background: rgba(0, 0, 0, 0.7);
@@ -93,9 +93,10 @@
     gap: 1rem;
   }
   .mainContent {
-    top: 25%;
+    top: 23%;
+    font-size: 16px;
   }
   .card {
-    font-size: 20px;
+    font-size: 16px;
   }
 }

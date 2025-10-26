@@ -28,3 +28,13 @@ body {
   width: 0;
   box-shadow: 0 0 128px 100px slategray;
 }
+
+.thirdLayer {
+  margin-top: -320px;
+}
+
+@media screen and (max-width: 1280px) {
+  .thirdLayer {
+    margin-top: 240px;
+  }
+}
