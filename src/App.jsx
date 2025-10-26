@@ -33,10 +33,10 @@ function App() {
 						</div>
 					</div>
 				</ParallaxLayer>
-				<ParallaxLayer offset={0.5} factor={2} speed={1.5} style={{ backgroundImage: `url(${FirstGradient})` }}>
+				<ParallaxLayer offset={0.5} factor={2.3} speed={1.5} style={{ backgroundImage: `url(${FirstGradient})` }}>
 					<About />
 				</ParallaxLayer>
-				<ParallaxLayer offset={1} factor={2} speed={1.5} style={{backgroundImage:`url(${SecondGradient})`}}>
+				<ParallaxLayer offset={0.5} factor={2} speed={1.0} style={{backgroundImage:`url(${SecondGradient})`,position:"relative",marginTop:"20px"}}>
 
 				</ParallaxLayer>
 
