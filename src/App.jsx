@@ -3,6 +3,7 @@ import Landing from './Landing.jsx'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import Stars from './assets/stars.png'
 import FirstGradient from './assets/firstgrad.png'
+import SecondGradient from './assets/secondgrad.png'
 import styles from './App.module.css'
 import About from './About.jsx'
 
@@ -32,8 +33,11 @@ function App() {
 						</div>
 					</div>
 				</ParallaxLayer>
-				<ParallaxLayer offset={0.5} factor={3} speed={1.5} style={{ backgroundImage: `url(${FirstGradient})` }}>
+				<ParallaxLayer offset={0.5} factor={2} speed={1.5} style={{ backgroundImage: `url(${FirstGradient})` }}>
 					<About />
+				</ParallaxLayer>
+				<ParallaxLayer offset={1} factor={2} speed={1.5} style={{backgroundImage:`url(${SecondGradient})`}}>
+
 				</ParallaxLayer>
 
 			</Parallax >
