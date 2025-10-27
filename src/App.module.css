@@ -30,11 +30,11 @@ body {
 }
 
 .thirdLayer {
-  margin-top: -320px;
+  margin-top: -400px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
   .thirdLayer {
-    margin-top: 240px;
+    margin-top: 20px;
   }
 }

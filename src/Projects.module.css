@@ -1,6 +1,6 @@
 .mainContent {
   position: absolute;
-  top: 15%;
+  top: 30%;
   color: white;
   left: 50%;
   font-family: arial;
@@ -12,4 +12,10 @@
 .mainContent > h1 {
   font-size: 52px;
   font-family: arial;
+}
+
+@media screen and (max-width: 1024px) {
+  .mainContent {
+    top: 40%;
+  }
 }

@@ -37,7 +37,7 @@ function App() {
 				<ParallaxLayer offset={0.5} factor={2.6} speed={1.5} style={{ backgroundImage: `url(${FirstGradient})` }}>
 					<About />
 				</ParallaxLayer>
-				<ParallaxLayer offset={0.5} factor={2} speed={1.0} style={{backgroundImage:`url(${SecondGradient})`,position:"relative"}} className={styles.thirdLayer}>
+				<ParallaxLayer offset={0.5} factor={2} speed={1.2} style={{backgroundImage:`url(${SecondGradient})`,position:"relative"}} className={styles.thirdLayer}>
 					<Projects />
 				</ParallaxLayer>
 
