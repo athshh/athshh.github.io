@@ -1,0 +1,22 @@
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 4rem;
+  height: auto;
+  padding: 24px;
+  background-color: #8b96ba;
+  border: 2px solid #c2cffc;
+  border-radius: 16px;
+  margin: 12px;
+}
+
+.textContainer > h3 {
+  font-size: 24px;
+  text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    grid-template-columns: auto;
+  }
+}

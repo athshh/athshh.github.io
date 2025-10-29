@@ -9,7 +9,7 @@ function About() {
 				<div className={styles.mainContent}>
 					<h1>About me.</h1>
 					<div className={styles.container}>
-						<div className={styles.containerItem} style={{ marginTop: "2rem" }}>
+						<div className={styles.containerItem} style={{ marginTop: "2rem", textAlign:"justify",textJustify:"auto" }}>
 							I like to experiment around with cutting edge tech. These days, I'm focused on improving my programming skills and experiment with new tech like AI. <b>I strive to not just be a jack of all trades, but even a master of them all.</b>
 						</div>
 						<div className={styles.containerItem}>
