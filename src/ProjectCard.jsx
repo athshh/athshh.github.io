@@ -10,7 +10,7 @@ function ProjectCard(logo, title, description, link) {
 				</div>
 				<div className={styles.textContainer}>
 					<h3>NewMUN official website</h3>
-					<p>I fully made the website for the MUN conference of the school I studied in, even with the pressures of high school exams.</p>
+					<p>I made the MUN website for my school.</p>
 				</div>
 			</div>
 		</>

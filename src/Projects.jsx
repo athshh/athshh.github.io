@@ -5,10 +5,8 @@ function Landing() {
 	return (
 		<>
 			<div className={styles.mainContent}>
-				<h1 style={{ marginBottom: "48px" }}>Projects.</h1>
+				<h1 style={{ marginBottom: "48px",color:"black"}}>Projects.</h1>
 				<div className={styles.projects}>
-					<ProjectCard />
-					<ProjectCard />
 					<ProjectCard />
 					<ProjectCard />
 				</div>
