@@ -3,30 +3,52 @@
   grid-template-columns: auto auto;
   gap: 4rem;
   height: auto;
-  padding: 24px;
+  padding: 24px 102px;
   background-color: white;
   border: 2px solid black;
   color: black;
   border-radius: 16px;
-  margin: 12px;
+  margin: 12px 0px;
+}
+
+.textContainer {
+  font-size: 24px;
 }
 
 .textContainer > h3 {
-  font-size: 24px;
+  font-size: 38px;
   text-align: left;
 }
 .textContainer > p {
   text-align: left;
 }
 
+img {
+  width: 256px;
+}
+
 @media screen and (max-width: 1024px) {
   .container {
     grid-template-columns: auto;
-    font-size: 16px;
     gap: 0rem;
   }
   .textContainer > h3 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  img {
+    width: 128px;
+  }
+  .container {
+    padding: 24px;
+  }
+  .textContainer {
     font-size: 16px;
     text-align: center;
+  }
+  .textContainer > h3 {
+    font-size: 16px;
   }
 }
