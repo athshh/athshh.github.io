@@ -3,7 +3,7 @@
   grid-template-columns: auto auto;
   gap: 4rem;
   height: auto;
-  padding: 24px 102px;
+  padding: 24px;
   background-color: white;
   border: 2px solid black;
   color: black;
@@ -16,7 +16,7 @@
 }
 
 .textContainer > h3 {
-  font-size: 38px;
+  font-size: 32px;
   text-align: left;
 }
 .textContainer > p {
@@ -24,7 +24,7 @@
 }
 
 img {
-  width: 256px;
+  width: 128;
 }
 
 @media screen and (max-width: 1024px) {
