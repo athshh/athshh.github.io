@@ -1,16 +1,21 @@
 import styles from './ProjectCard.module.css'
-import Logo from './assets/NewMUN-logo-new_trans.png'
 
-function ProjectCard(logo, title, description, link) {
+function ProjectCard({ logo, title, description, projLink }) {
 	return (
 		<>
 			<div className={styles.container} >
 				<div className={styles.imageContainer}>
-					<img src={Logo} />
+					<img src={logo} />
 				</div>
 				<div className={styles.textContainer}>
-					<h3>NewMUN official website</h3>
-					<p>I made the MUN website for my school.</p>
+					<h3>{title}</h3>
+					<p>{description}
+					</p>
+					<a href={projLink}>
+						<button className={styles.ProjectLink}>GitHub</button>
+
+					</a>
+
 				</div>
 			</div>
 		</>

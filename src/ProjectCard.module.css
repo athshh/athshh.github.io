@@ -3,7 +3,7 @@
   grid-template-columns: auto auto;
   gap: 4rem;
   height: auto;
-  padding: 24px;
+  padding: 48px 24px;
   background-color: white;
   border: 2px solid black;
   color: black;
@@ -12,11 +12,11 @@
 }
 
 .textContainer {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .textContainer > h3 {
-  font-size: 32px;
+  font-size: 28px;
   text-align: left;
 }
 .textContainer > p {
@@ -25,6 +25,25 @@
 
 img {
   width: 128;
+}
+button {
+  text-align: left;
+  background-color: white;
+  border: 2px black solid;
+  border-radius: 10px;
+  width: auto;
+  padding: 12px 16px;
+  box-shadow: 5px 5px;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  box-shadow: 2px 2px;
+  background-color: lightgray;
+}
+button:active {
+  box-shadow: 1px 1px;
+  background-color: gray;
 }
 
 @media screen and (max-width: 1024px) {
