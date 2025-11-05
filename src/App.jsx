@@ -1,12 +1,12 @@
 import Navbar from './Navbar.jsx'
-import Landing from './Landing.jsx'
+import Landing from './Landing/Landing.jsx'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import Stars from './assets/stars.png'
 import FirstGradient from './assets/firstgrad.png'
-import Projects from './Projects.jsx'
+import Projects from './Projects/Projects.jsx'
 import SecondGradient from './assets/secondgrad.png'
 import styles from './App.module.css'
-import About from './About.jsx'
+import About from './About/About.jsx'
 
 function App() {
 	const move = document.getElementById("move");

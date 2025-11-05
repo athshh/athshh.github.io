@@ -1,5 +1,4 @@
 import styles from './About.module.css'
-import Card from './Card.jsx'
 import { ParallaxLayer, Parallax } from '@react-spring/parallax'
 
 function About() {
