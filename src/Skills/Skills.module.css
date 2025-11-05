@@ -21,12 +21,3 @@
   gap: 4rem;
   grid-template-columns: auto auto;
 }
-
-@media screen and (max-width: 1024px) {
-  .mainContent {
-    top: 25%;
-  }
-  .projects {
-    grid-template-columns: auto;
-  }
-}
