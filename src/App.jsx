@@ -43,7 +43,7 @@ function App() {
 					<Projects />
 				</ParallaxLayer>
 
-				<ParallaxLayer offset={0.1} factor={2} speed={1.3} style={{backgroundImage:`url(${ThirdGradient})`,position:"relative"}} className={styles.fourthLayer}>
+				<ParallaxLayer offset={0.1} factor={2} speed={1.3} style={{backgroundImage:`url(${ThirdGradient})`,position:"relative",pointerEvents:'none'}} className={styles.fourthLayer}>
 					<Skills />
 				</ParallaxLayer>
 			</Parallax >
