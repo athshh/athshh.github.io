@@ -1,7 +1,7 @@
 .mainContent {
   position: absolute;
-  top: 30%;
-  color: white;
+  top: 25%;
+  color: black;
   left: 50%;
   font-family: arial;
   transform: translate(-50%, 0%);
@@ -15,9 +15,39 @@
   font-family: arial;
 }
 
-.projects {
-  margin: 24px auto;
+.container {
   display: grid;
-  gap: 4rem;
   grid-template-columns: auto auto;
+  gap: 4rem;
+}
+p {
+  text-align: justify;
+  text-justify: auto;
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+  }
+  .mainContent {
+    top: 23%;
+    font-size: 16px;
+  }
+  p {
+    text-align: center;
+    text-justify: none;
+  }
+}
+
+.btnGroup > button {
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btnGroup:after {
+  content: "";
+  clear: both;
+  display: table;
 }

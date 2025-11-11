@@ -1,6 +1,6 @@
 .mainContent {
   position: absolute;
-  top: 30%;
+  top: 25%;
   color: white;
   left: 50%;
   font-family: arial;
@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 1024px) {
   .mainContent {
-    top: 30%;
+    top: 25%;
   }
   .projects {
     grid-template-columns: auto;

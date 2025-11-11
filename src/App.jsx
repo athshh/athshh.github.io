@@ -39,11 +39,11 @@ function App() {
 				<ParallaxLayer offset={0.5} factor={2.6} speed={1.5} style={{ backgroundImage: `url(${FirstGradient})` }}>
 					<About />
 				</ParallaxLayer>
-				<ParallaxLayer offset={0.5} factor={2} speed={1.2} style={{backgroundImage:`url(${SecondGradient})`,position:"relative"}} className={styles.thirdLayer}>
+				<ParallaxLayer offset={0.5} factor={2.6} speed={1.2} style={{backgroundImage:`url(${SecondGradient})`,position:"relative"}} className={styles.thirdLayer}>
 					<Projects />
 				</ParallaxLayer>
 
-				<ParallaxLayer offset={0.1} factor={2} speed={1.3} style={{backgroundImage:`url(${ThirdGradient})`,position:"relative",pointerEvents:'none'}} className={styles.fourthLayer}>
+				<ParallaxLayer offset={0.1} factor={2.6} speed={1.4} style={{backgroundImage:`url(${ThirdGradient})`,position:"relative",pointerEvents:'none'}} className={styles.fourthLayer}>
 					<Skills />
 				</ParallaxLayer>
 			</Parallax >
