@@ -27,5 +27,6 @@
   }
   .projects {
     grid-template-columns: auto;
+    gap: 1rem;
   }
 }
