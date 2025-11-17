@@ -33,9 +33,20 @@ body {
   margin-top: -400px;
   height: auto;
 }
+.fourthLayerMobile {
+  display: none;
+}
 
 @media screen and (max-width: 1024px) {
   .thirdLayer {
     margin-top: 80px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .fourthLayer {
+    display: none;
+  }
+  .fourthLayerMobile {
+    display: block;
   }
 }

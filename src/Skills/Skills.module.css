@@ -1,6 +1,6 @@
 .mainContent {
   position: absolute;
-  top: 25%;
+  top: 20%;
   color: black;
   left: 50%;
   font-family: arial;
@@ -39,15 +39,4 @@ p {
     text-align: center;
     text-justify: none;
   }
-}
-
-.btnGroup > button {
-  float: left; /* Float the buttons side by side */
-}
-
-/* Clear floats (clearfix hack) */
-.btnGroup:after {
-  content: "";
-  clear: both;
-  display: table;
 }
