@@ -24,6 +24,30 @@ p {
   text-align: justify;
   text-justify: auto;
 }
+.btn-group btn {
+  background-color: white; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+.btn-group btn:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group btn:hover {
+  background-color: #3e8e41;
+}
 
 @media screen and (max-width: 1280px) {
   .container {
