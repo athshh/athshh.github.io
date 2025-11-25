@@ -17,36 +17,57 @@
 
 .container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   gap: 4rem;
 }
 p {
   text-align: justify;
   text-justify: auto;
-}
-.btn-group btn {
-  background-color: white; /* Green background */
-  border: 1px solid green; /* Green border */
-  color: white; /* White text */
-  padding: 10px 24px; /* Some padding */
-  cursor: pointer; /* Pointer/hand icon */
-  float: left; /* Float the buttons side by side */
+} /* This controls the layout of the button container */
+.btnGroup {
+  display: flex;
+  flex-wrap: wrap; /* Allows buttons to go to the next line if needed */
+  justify-content: center; /* Centers the buttons in the container */
+  height: auto;
 }
 
-.btn-group btn:not(:last-child) {
-  border-right: none; /* Prevent double borders */
+/* This is the style for each button */
+.CategoryButton {
+  background-color: white;
+  border: 2px black solid;
+  color: black;
+  padding: 8px 12px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+
+  /* Remove individual radius and shadow */
+  border-radius: 0;
+  box-shadow: none;
+
+  /* Remove the right border from all buttons EXCEPT the last one */
+  border-right: none;
 }
 
-/* Clear floats (clearfix hack) */
-.btn-group:after {
-  content: "";
-  clear: both;
-  display: table;
+/* Add rounded corners ONLY to the first button's left side */
+.CategoryButton:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
-/* Add a background color on hover */
-.btn-group btn:hover {
-  background-color: #3e8e41;
+/* Add rounded corners AND the right border ONLY to the last button */
+.CategoryButton:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-right: 2px black solid; /* Re-add the right border */
+}
+
+/* Hover/Active effects */
+.CategoryButton:hover {
+  background-color: lightgray;
+}
+
+.CategoryButton:active {
+  background-color: gray;
 }
 
 @media screen and (max-width: 1280px) {
@@ -63,4 +84,17 @@ p {
     text-align: center;
     text-justify: none;
   }
+} /* ... add this at the end of your file ... */
+
+/* This is the new style for the *active* button */
+.activeButton {
+  background-color: black;
+  color: white;
+  box-shadow: 2px 2px #666; /* A slightly different shadow */
+}
+
+/* Optional: Make the active button's hover state different */
+.activeButton:hover {
+  background-color: #333; /* Dark gray instead of lightgray */
+  box-shadow: 1px 1px #666;
 }

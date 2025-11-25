@@ -1,8 +1,17 @@
+import { useState } from 'react'
 import styles from './Skills.module.css'
 import Card from './Card.jsx'
 
+const skills = [
+	"Programming",
+	"AI/ML",
+	"DevOps",
+	"Databases"
+]
+
 
 function Skills() {
+	const [activeSkill, setActiveSkill] = useState(null);
 	function test() {
 		alert("hello world");
 	}
@@ -16,10 +25,9 @@ function Skills() {
 					</div>
 					<div className={styles.containerItem}>
 						<div className={styles.btnGroup}>
-							<a onClick={test} className={styles.btn}>Programming</a>
-							<a className={styles.btn}>Programming</a>
-							<a className={styles.btn}>Programming</a>
-							<a className={styles.btn}>Programming</a>
+							{skills.map((skillName) => (
+							<button key={skillName} type="button" onclick={() => setActiveSkill(skillName)} className={[styles.CategoryButton, activeSkill === skillName ? styles.activeButton : ''].join(' ')}>{skillName}</button>
+							))}
 						</div>
 					</div>
 				</div>
