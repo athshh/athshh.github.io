@@ -1,6 +1,5 @@
 .container {
   display: grid;
-  grid-template-columns: 25% auto;
   gap: 4rem;
   height: auto;
   padding: 48px 24px;
@@ -16,10 +15,9 @@
 
 .textContainer > h3 {
   font-size: 28px;
-  text-align: left;
 }
 .textContainer > p {
-  text-align: left;
+  text-align: center;
 }
 
 img {

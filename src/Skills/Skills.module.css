@@ -90,11 +90,38 @@ p {
 .activeButton {
   background-color: black;
   color: white;
-  box-shadow: 2px 2px #666; /* A slightly different shadow */
 }
 
 /* Optional: Make the active button's hover state different */
 .activeButton:hover {
   background-color: #333; /* Dark gray instead of lightgray */
   box-shadow: 1px 1px #666;
+}
+
+.skills {
+  margin-top: 2%;
+}
+
+.skillsProgramming {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+}
+.skillsAI {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+  display: none;
+}
+.skillsDevOps {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+  display: none;
+}
+.skillsDB {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+  display: none;
 }
