@@ -3,29 +3,29 @@ import styles from './Skills.module.css'
 import Card from './Card.jsx'
 
 const skills = [
-	"Programming",
-	"AI/ML",
-	"DevOps",
-	"Databases"
+	"Languages",
+	"WebDev",
+	"Tools",
+	"AI/ML"
 ]
 
 const skillTable = {
-	"Programming":"skillsProgramming",
-	"AI/ML":"skillsAI",
-	"DevOps":"skillsDevOps",
-	"Databases":"skillsDB"
+	"Languages":"skillsProgramming",
+	"WebDev":"skillsAI",
+	"Tools":"skillsDevOps",
+	"AI/ML":"skillsDB"
 }
 
 function Skills() {
 	const [activeSkill, setActiveSkill] = useState(null);
 	function changeView(skillName) {
 		for (var i = 0;i<4;i++) {
-			var currentSkill = document.getElementById(skillTable[skillName])
+			var currentSkill = document.getElementById(skillTable[skills[i]])
 			console.log(currentSkill)
-			var currentSkillID = skillTable[currentSkill]
-			console.log(currentSkillID)
+			var currentSkillID = currentSkill.id+"Cards"
+			document.getElementById(currentSkillID).style.display = 'none'
 		}
-		console.log(oldActive);
+		document.getElementById(skillTable[skillName]+"Cards").style.display = 'grid';
 	}
 	return (
 		<>
@@ -38,25 +38,29 @@ function Skills() {
 					<div className={styles.containerItem}>
 						<div className={styles.btnGroup}>
 							{skills.map((skillName) => (
-							<button key={skillName} type="button" onClick={() => {setActiveSkill(skillName); changeView(skillName);}} className={[styles.CategoryButton, activeSkill === skillName ? styles.activeButton : ''].join(' ')} id={skillTable[skillName]}>{skillName}</button>
+							<button key={skillName} type="button" onClick={() => {changeView(skillName);setActiveSkill(skillName);}} className={[styles.CategoryButton, activeSkill === skillName ? styles.activeButton : ''].join(' ')} id={skillTable[skillName]}>{skillName}</button>
 							))}
 						</div>
 						<div className={styles.skills}>
-							<div className={styles.skillsProgramming} id="skillsProgrammingCards">
-								<Card title="hi" description="hello"></Card>
-								<Card title="hi" description="hello"></Card>
+							<div className={`${styles.skillSection} ${styles.skillsProgramming}`} id="skillsProgrammingCards">
+								<Card title="Python" ></Card>
+								<Card title="JavaScript" ></Card>
+								<Card title="C#" ></Card>
+								<Card title="C++"></Card>
+								<Card title="SQL" ></Card>
 							</div>
-							<div className={styles.skillsAI} id="skillsAICards">
-								<Card title="hi" description="2123e"></Card>
-								<Card title="hi" description="212o"></Card>
+							<div className={`${styles.skillSection} ${styles.skillsAI}`} id="skillsAICards">
+								<Card title="HTML" ></Card>
+								<Card title="CSS" ></Card>
+								<Card title="React.js" ></Card>
 							</div>
-							<div className={styles.skillsDevOps} id="skillsDevOpsCards">
-								<Card title="hi" description="1"></Card>
-								<Card title="hi" description="2"></Card>
+							<div className={`${styles.skillSection} ${styles.skillsDevOps}`} id="skillsDevOpsCards">
+								<Card title="Git" ></Card>
+								<Card title="Linux" ></Card>
 							</div>
-							<div className={styles.skillsDB} id="skillsDBCards">
-								<Card title="hi" description="2"></Card>
-								<Card title="hi" description="3"></Card>
+							<div className={`${styles.skillSection} ${styles.skillsDB}`} id="skillsDBCards">
+								<Card title="Basic Python ML" ></Card>
+								<Card title="Local LLM experience" ></Card>
 							</div>
 						</div>
 					</div>

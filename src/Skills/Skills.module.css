@@ -104,24 +104,28 @@ p {
 
 .skillsProgramming {
   display: grid;
+  place-items: center;
   grid-template-columns: auto auto;
-  gap: 2rem;
+  gap: 1rem;
 }
 .skillsAI {
   display: grid;
+  place-items: center;
   grid-template-columns: auto auto;
-  gap: 2rem;
+  gap: 1rem;
   display: none;
 }
 .skillsDevOps {
   display: grid;
+  place-items: center;
   grid-template-columns: auto auto;
-  gap: 2rem;
+  gap: 1rem;
   display: none;
 }
 .skillsDB {
   display: grid;
+  place-items: center;
   grid-template-columns: auto auto;
-  gap: 2rem;
+  gap: 1rem;
   display: none;
 }
