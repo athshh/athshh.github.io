@@ -11,7 +11,7 @@ function Landing() {
 				<div className={styles.projects}>
 					<ProjectCard logo={NewMUNLogo} title="NewMUN Website" description="New Indian School, Bahrain MUN website." projLink="https://github.com/athshh/newmun_main" />
 					<ProjectCard logo={PyVaultLogo} title="PyVault" description="Password manager, encrypted notepad and encrypted file vault." projLink="https://github.com/athshh/pyvault" />
-					<ProjectCard logo={PyVaultLogo} title="coming soon." description="coming soon." projLink="#" />
+					<ProjectCard logo={PyVaultLogo} title="khinsider.py" description="A video game sountrack downloader. (I maintain the repo)" projLink="https://github.com/killshott3r/khinsider" />
 				</div>
 
 			</div>

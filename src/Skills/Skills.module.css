@@ -26,9 +26,9 @@ p {
 } /* This controls the layout of the button container */
 .btnGroup {
   display: flex;
-  flex-wrap: wrap; /* Allows buttons to go to the next line if needed */
   justify-content: center; /* Centers the buttons in the container */
   height: auto;
+  margin-bottom: 20px;
 }
 
 /* This is the style for each button */
@@ -70,22 +70,6 @@ p {
   background-color: gray;
 }
 
-@media screen and (max-width: 1280px) {
-  .container {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 1rem;
-  }
-  .mainContent {
-    top: 23%;
-    font-size: 16px;
-  }
-  p {
-    text-align: center;
-    text-justify: none;
-  }
-} /* ... add this at the end of your file ... */
-
 /* This is the new style for the *active* button */
 .activeButton {
   background-color: black;
@@ -102,30 +86,28 @@ p {
   margin-top: 2%;
 }
 
-.skillsProgramming {
+.skillGrid {
   display: grid;
   place-items: center;
   grid-template-columns: auto auto;
   gap: 1rem;
 }
-.skillsAI {
-  display: grid;
-  place-items: center;
-  grid-template-columns: auto auto;
-  gap: 1rem;
-  display: none;
-}
-.skillsDevOps {
-  display: grid;
-  place-items: center;
-  grid-template-columns: auto auto;
-  gap: 1rem;
-  display: none;
-}
-.skillsDB {
-  display: grid;
-  place-items: center;
-  grid-template-columns: auto auto;
-  gap: 1rem;
-  display: none;
+
+@media screen and (max-width: 1280px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+  }
+  .mainContent {
+    top: 23%;
+    font-size: 16px;
+  }
+  p {
+    text-align: center;
+    text-justify: none;
+  }
+  .skillGrid {
+    grid-template-columns: auto;
+  }
 }

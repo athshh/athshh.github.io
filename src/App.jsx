@@ -25,7 +25,7 @@ function App() {
 	}
 	return (
 		<>
-			<Parallax pages={5}>
+			<Parallax pages={3}>
 				<ParallaxLayer offset={0} factor={1.5} speed={2.0} style={{ position: "relative" }}>
 					<div id="wrapper">
 						<div className={styles.landingBG} id="move">

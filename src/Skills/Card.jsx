@@ -1,6 +1,6 @@
 import styles from './Card.module.css'
 
-function Card({ logo, title, description}) {
+function Card({ logo, title}) {
 	return (
 		<>
 			<div className={styles.container} >
